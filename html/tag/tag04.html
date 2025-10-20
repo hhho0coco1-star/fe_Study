@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    a 태그 : 어떤 링크로 이동하는 태그 
+    href 속성 : 이동할 경로
+    target 속성
+        _blank : 새 창
+        _self : 현재 창 
+    링크 + 컨트롤 클릭 : 새 창으로 이동
+    -->
+    <!-- <a herf="이동할 주소" target=_blank(새 창) or _self(현재 창) title="설명"> 보이는 화면 설명</a> -->
+    <a href="https://www.naver.com" target="_blank" title="네이버 링크">네이버 이동(새 창)</a>
+    <br>
+    <a href="https://www.google.com" target="_self" title="구글 링크">구글 이동(현재 창)</a>
+    <br>
+    <a href="./tag03.hteml" target="_balnk" title="tag03 링크">tag03 링크</a>
+    <br>
+
+    <!-- 화면에 이미지 보기 -->
+    <!-- <img src="이미지 경로" alt="이미지 설명" -->
+    <img src="https://thumbnail.coupangcdn.com/thumbnails/remote/292x292ex/image/vendor_inventory/b271/ef59bfbd16becad702e83f6b538c7b2e3f44c64ac8603872162fb878f7d6.jpg" alt="빗자루">
+    <br>
+
+    <img src="./img02.png" alt="대용량 오예스"> <!-- 현재 파일과 동일한 경로 ./ -->
+    <br>
+    <img src="./img/img01.png" alt="쥐포"> <!-- 하위 폴더 경로 -->
+    <br>
+    <img src="../../img/img03.png" alt="초코파이"> <!-- ../ 상위 폴더 경로 -->
+
+    <br> <!-- 이미지와 경로 함께 넣기 -->
+    <a href="https://www.coupang.com/?n_media=27758&n_query=%EC%BF%A0%ED%8C%A1&n_rank=1&n_ad_group=grp-a001-04-000000053975419&n_ad=nad-a001-04-000000425825305&n_keyword_id=nkw-a001-04-000007450801818&n_keyword=%EC%BF%A0%ED%8C%A1&n_campaign_type=4&n_contract=tct-a001-04-000000001164921&n_ad_group_type=5" target="_blank">
+        <img src="../../img/img03.png" alt="초코파이">
+    </a>
+        <!-- 의미적 강조 태그 em(넘어짐) or strong(굵게)
+         페이지 의미 분석(웹 접근성)-->
+        <p>여기는 위험하니 <em>절대로</em> 지나가지마세요!</p>
+        <p>커피는 <strong>꼭 미리주문</strong> 해야합니다.</p>
+
+        <!-- b or i 시각적 강조 -->
+        <p>여기는 위험하니 <b>절대로</b> 지나가지마세요!</p>
+        <p>커피는 <i>꼭 미리주문</i> 해야합니다.</p>
+</body>
+</html>
