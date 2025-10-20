@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- label : 체크박스 클릭 범위 확대 -->
+    <label>치즈 추가<input type="checkbox"></label>
+    <label>양배추 추가<input type="checkbox"></label>
+    <label>패티 추가<input type="checkbox"></label>
+
+    <br><br>
+    <!-- label 명시적인 방법 
+        id 속성 + for 속성 -->
+    <label for="cheese">치즈 추가</label>        <input type="checkbox" id="cheese">
+    <label for="cabbage">양배추 추가</label>      <input type="checkbox" id="cabbage">
+    <label for="patty">패티 추가</label>        <input type="checkbox" id="patty">
+
+    <br><br>
+    <fieldset>
+        <legend>족발 사이즈 선택</legend> <!-- 제목 -->
+        <label>족발 대<input type="radio" name="size"></label>
+        <label>족발 중<input type="radio" name="size"></label>
+        <label>족발 소<input type="radio" name="size"></label>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>블로그 글쓰기</legend>
+        제목<input type="text" value="초기값"><br><br>
+        내용<textarea readonly>초기값</textarea> <!-- textarea 여러 줄 쓰기-->
+        <!-- read only : 활성화된 읽기 전용 -->
+    </fieldset>
+
+    <select> <!-- 콤보 박스 -->
+        <option>김밥</option>
+        <option>치즈김밥</option>
+        <option>참치김밥</option>
+    </select>
+
+    <select multiple size="3"> <!-- mutiple : 콤보박스 내 여러 개 선탁
+        size : 몇 개의 항목을 보여줌 -->
+        <optgroup label="김밥"> <!-- optgroup : 그룹으로 지정 -->
+            <option>김밥</option>
+            <option selected>치즈김밥</option> <!-- selected : 초기값 지정 -->
+            <option>참치김밥</option>
+        </optgroup>
+        <optgroup label="햄버거">
+            <option>롯데리아</option>
+            <option>맥도날드</option>
+            <option>맘스터리</option>
+        </optgroup>
+    </select>
+
+    <br><br>
+    <button disabled>button</button> <!-- disabled : 해당 기능 비활성화-->
+    <input type="button" value="button"><br>
+
+    <button> <!-- 이미지 내 버튼 넣기 -->
+        <img src="./img02.png">
+        img button
+    </button>
+
+    <br><br>
+    
+    <input type="text" maxlength="10"> 
+    <!-- maxlength : 입력할 수 있는 글자 수 제한 -->
+
+    <br><br>
+    일회용품을 받지 않겠습니다. <input type="checkbox" checked>
+    <!-- checked : 선택된 상태로 생성 -->
+
+    <br><br>
+    <form>
+        <input type="text" value="아이디 입력"><br>
+        <input type="text" placeholder="ID"> <!-- placeholder : 입력해야 할 정보(힌트) 제공 -->
+        <br><input type="reset"> <!-- reset은 해당 form 안에 구역만 리셋된다. -->
+        <br><input type="submit">
+        <br><button type="button">just button</button> 
+        <!-- 버튼을 초기화하여 submit button의 기능과 다르게 만든다. -->
+
+    </form>
+</body>
+</html>
