@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<>
+
+    <!-- audio video 표시 -->
+    <audio src="../../media/5second.mp3" controls></audio><br>
+
+    <video src="../../media/5second.mp4" controls></video><br>
+
+    <video src="../../media/5second.mp4" autoplay muted loop></video>
+    <!-- autoplay : 비디오 자동재생 / muted : 음소거 / loop : 반복 
+     autoplay muted : 정책상 같이 써야 비디오 재생 가능 -->
+    <!-- controls : 오디오, 비디오 보이게 하는 속성 -->
+
+    <audio controls> <!-- for 역할 첫 문장 재생 불가능 시, 아래문장 실행 -->
+        <source src="../../media/5second.mp3" type="audio/mpeg">
+        <source src="../../media/5second.ogg" type="audio/ogg">
+        <source src="../../media/5second.wav" type="audio/wav">
+    </audio>
+    
+    <br><br>
+
+    <video controls>
+        <source src="../../media/5second.mp4" type="video/mp4">
+        <source src="../../media/5second.mpeg" type="video/mpeg">
+        <source src="../../media/5second.avi" type="video/x-msvideo">
+    </video>
+
+    <iframe width="900" height="900" src="https://www.youtube.com/embed/FPg95PvRbew" title="이스탄불2탄) 150kg 남자도 10개 밖에 못먹는대서 보여드렸습니다🤣 역대급 맛있는 시장 케밥 먹방" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
