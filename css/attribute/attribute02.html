@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&family=Black+Han+Sans&display=swap"
+        rel="stylesheet">
+    <style>
+        /* // <weight>: Use a value from 100 to 900
+        // <uniquifier>: Use a unique and descriptive class name */
+
+
+
+        .font_attr1 {
+            font-family: Arial, Helvetica, sans-serif;
+            /* 글씨체 */
+            font-size: 100px;
+            /* 글자 크기 */
+            font-variant: small-caps;
+            /* 대문자 변환 */
+            letter-spacing: 10px;
+            line-height: 50px;
+        }
+
+        .font_attr2 {
+            font-weight: 700;
+            /* 두께 */
+            font-style: italic;
+            /* 글씨체(기울임) */
+        }
+
+        .font_box {
+            text-align: center;
+            /* 좌 가운데 우 정렬 */
+        }
+
+        .inbox1 {
+            font-size: 2em;
+            /* 부모 글자 대비 2배(em) */
+        }
+
+        .inbox2 {
+            font-size: 2rem;
+            /* rem 상대크기(html 크기 대기 : 기본 크기(16px)) */
+        }
+
+        .bitcount-grid-single-new_font1 {
+            font-family: "Bitcount Grid Single", system-ui;
+            font-optical-sizing: auto;
+            font-weight: 900;
+            font-style: normal;
+            font-variation-settings:
+                "slnt" 0,
+                "CRSV" 0.5,
+                "ELSH" 0,
+                "ELXP" 0;
+        }
+    </style>
+</head>
+
+<body>
+    <p>기본 텍스트</p>
+    <p class="font_attr1">Font attr1</p>
+
+    <p class="font_attr2">Font attr2</p>
+
+    <p class="bitcount-grid-single-new_font1">
+        오늘의 특가
+        <del>5,000원</del><ins>3,000원</ins>
+    </p>
+
+    <p>
+        오늘의 특가
+        <span style="text-decoration:line-through;">5,000원</span>
+        <span style="text-decoration:underline;">3,000원</span>
+    </p>
+
+    <div class="font_box">
+        <p>font box 글자 1</p>
+        <p class="inbox1">font box 글자 22</p>
+        <p class="inbox2">font box 글자 333</p>
+    </div>
+
+    <div class="font_box">
+        <p>font box 글자 1</p>
+        <p class="inbox1">font box 글자 22</p>
+        <p class="inbox2">font box 글자 333</p>
+    </div>
+
+</body>
+
+</html>
