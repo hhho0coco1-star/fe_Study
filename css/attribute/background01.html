@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            width: 1000px;
+            height: 1000px;
+            border: 1px solid red;
+        }
+        .back {
+            background-color: aqua; /* 배경 색 */
+        }
+        .back_img {
+            background-image: url("../../img/img03.png");
+            background-repeat: repeat; /* 이미지 반복 */
+            /* background-size: auto; 이미지 비율 : auto, contain, cover */
+            background-position: center center; /* 이미지 위치 지정 */
+        }
+    </style>
+</head>
+<body>
+    <div class="box back"></div>
+
+    <div class="box back_img"></div>
+    
+</body>
+</html>
