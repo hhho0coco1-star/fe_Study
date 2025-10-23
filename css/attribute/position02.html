@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+        }
+
+        
+        .red-box {
+            background-color: red;
+            position: absolute;
+            left:200px;
+            z-index: 100; /* 빨간색을 맨 앞으로 이동(숫자가 클수록 앞으로 이동) */
+        }
+
+        .green-box {
+            background-color: green;
+            position: absolute; /* 흐름을 벗어난 배치 */
+            left: 100px;
+        }
+
+        .blue-box {
+            background-color: blue;
+            position: relative;
+            /* left: 30px; */
+            /* position: static; 기본값 작성하지 않아도 기본으로 설정됨 */
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="box red-box"></div>
+    <div class="box green-box"></div>
+    <div class="box blue-box"></div>
+
+</body>
+</html>

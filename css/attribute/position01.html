@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            height: 4000px;
+        }
+
+        .content {
+            width: 400px;
+            height: 400px;
+            overflow: scroll;  /* 해당 요소 공간을 넘치는 경우! hidden 숨김, scroll */
+            background-image: url();
+            background-attachment: fixed;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic amet reiciendis laboriosam ad atque incidunt eum eligendi doloribus, dolorem libero dolorum nesciunt distinctio ipsum quo quisquam cumque modi architecto saepe!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic amet reiciendis laboriosam ad atque incidunt eum eligendi doloribus, dolorem libero dolorum nesciunt distinctio ipsum quo quisquam cumque modi architecto saepe!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic amet reiciendis laboriosam ad atque incidunt eum eligendi doloribus, dolorem libero dolorum nesciunt distinctio ipsum quo quisquam cumque modi architecto saepe!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic amet reiciendis laboriosam ad atque incidunt eum eligendi doloribus, dolorem libero dolorum nesciunt distinctio ipsum quo quisquam cumque modi architecto saepe!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic amet reiciendis laboriosam ad atque incidunt eum eligendi doloribus, dolorem libero dolorum nesciunt distinctio ipsum quo quisquam cumque modi architecto saepe!</p>
+    </div>
+
+</body>
+</html>
+
+2025.10.23 12:08 정용진
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+        }
+        /* position 속성 : 위치 지정(배치)
+            static : 기본 값 static 고정임으로 위치 변경 불가능
+            relative : 흐름대로 + 위치 조정 가능
+            fixed : 흐름무시 + 절대좌표 위치 지정
+            sticky : 흐름대로 + 특정 위치에 가면 fixed처럼 고정
+                (위치기준 : 원래 자기가 있어야 하는 위치)
+        */
+        
+        .blue-box {
+            background-color: red;
+            position: relative;
+            left: 50px;
+        }
+
+        .green-box {
+            background-color: green;
+            
+            position:relative;
+            left: 150px;
+            bottom: 200px;
+        }
+
+        .red-box {
+            background-color: blue;
+
+            position: relative;
+            left: 250px;
+            bottom: 400px;
+        }
+        
+    </style>
+
+</head>
+<body>
+    
+    <div class="box blue-box"></div>
+    <div class="box green-box"></div>
+    <div class="box red-box"></div>
+
+</body>
+</html>
