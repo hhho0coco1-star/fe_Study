@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+
+            animation-name: box-ani1;
+            animation-duration: 3s; /* 응답 시간 */
+            animation-delay: 2s; /* 대기 시간 */
+            animation-fill-mode: forwards; /* forwards : 실행 후 상태를 적용 end */
+            animation-iteration-count: infinite; /* 반복 무제한 */
+            animation-direction: alternate; 
+            animation-play-state: running;
+            /* 
+                normal : 0 ~ 100 반복 
+                reverse : 100 ~ 0 반복
+                alternate : 짝수 홀수(왔다 갔다) 반복
+            */
+        }
+        .box:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes box-ani1{
+            0% {
+                background-color: red;
+                width: 200px;
+                opacity: 1; /* 배경 투명도 */
+            }
+            50% {
+                background-color: green;
+                width: 300px;
+                opacity: 0.6;
+            }
+            100% {
+                background-color: blue;
+                width: 500px;
+                opacity: 0.2;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
