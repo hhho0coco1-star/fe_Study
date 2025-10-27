@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            /* border: 1px solid black; */
+            background-color: blue;
+        }
+        .box1 {
+            position: relative;
+            animation-name: box-ani1;
+            animation-duration: 3s;
+            /* 응답 시간 */
+            /* animation-delay: 2s; 대기 시간 */
+            /* animation-fill-mode: forwards; forwards : 실행 후 상태를 적용 end */
+            animation-iteration-count: infinite;
+            /* 반복 무제한 */
+            animation-direction: alternate;
+            animation-play-state: running;
+        }
+        .box1:hover {
+            animation-play-state: paused;
+        }
+        @keyframes box-ani1 {
+            0% {
+                background-color: blue;
+                left: 10px;
+                /* left: 0px; */
+                /* opacity: 1; 배경 투명도 */
+            }
+
+            50% {
+                background-color: orange;
+                left: 110px;
+                /* left: 100px; */
+                /* opacity: 0.6; */
+            }
+
+            100% {
+                background-color: pink;
+                left: 210px;
+                /* left: 200px; */
+                /* opacity: 0.2; */
+            }
+        }
+        .box2 {
+            position: relative;
+            animation-name: box-ani2;
+            animation-duration: 3s;
+            /* 응답 시간 */
+            /* animation-delay: 2s; 대기 시간 */
+            /* animation-fill-mode: forwards; forwards : 실행 후 상태를 적용 end */
+            animation-iteration-count: infinite;
+            /* 반복 무제한 */
+            animation-direction: alternate;
+            animation-play-state: running;
+        }
+        .box2:hover {
+            animation-play-state: paused;
+        }
+        @keyframes box-ani2 {
+            0% {
+                background-color: blue;
+                top: 0px;
+                /* left: 0px; */
+                /* opacity: 1; 배경 투명도 */
+            }
+
+            50% {
+                background-color: orange;
+                top: 100px;
+                /* left: 100px; */
+                /* opacity: 0.6; */
+            }
+
+            100% {
+                background-color: pink;
+                top: 200px;
+                /* left: 200px; */
+                /* opacity: 0.2; */
+            }
+        }
+        .box3 {
+            position: relative;
+            animation-name: box-ani3;
+            animation-duration: 3s;
+            /* 응답 시간 */
+            /* animation-delay: 2s; 대기 시간 */
+            /* animation-fill-mode: forwards; forwards : 실행 후 상태를 적용 end */
+            animation-iteration-count: infinite;
+            /* 반복 무제한 */
+            animation-direction: alternate; /* 애니메이션 순방향 진행 후, 역방향으로 진행 */
+            animation-play-state: running;
+        }
+        .box2:hover {
+            animation-play-state: paused;
+        }
+        @keyframes box-ani3 {
+            0% {
+                background-color: blue;
+                top: 0px;
+                left: 0px;
+                /* left: 0px; */
+                /* opacity: 1; 배경 투명도 */
+            }
+
+            50% {
+                background-color: orange;
+                top: 100px;
+                left: 100px;
+                /* left: 100px; */
+                /* opacity: 0.6; */
+            }
+
+            100% {
+                background-color: pink;
+                top: 200px;
+                left: 200px;
+                /* left: 200px; */
+                /* opacity: 0.2; */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">box1</div>
+    <div class="box box2">box2</div>
+    <div class="box box3">box3</div>
+</body>
+
+</html>
