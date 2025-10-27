@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * { /* 기본 세팅 */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .item {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            border: 1px solid black;
+        }
+
+        .container {
+            display: flex;
+            /* 
+            inline-flex : 옆에 올 수 있다
+            flex : 마지막 옆에 올 수 없다
+            */ 
+            /* flex-direction: row-reverse;  */
+            /* 반대로 설정 
+            flex-direction
+            row or row reverse
+            column or column reverse
+            */
+            flex-wrap: wrap; 
+            /* 
+            페이지 크기 변환 시, 자동 줄 바꿈 
+            wrap or wrap-reverse 
+            */
+            height: 400px;
+            background-color: lightblue;
+            opacity: 0.5;
+            justify-content: space-evenly; /* block 내 배치 정렬(가로) */
+            align-items: center; /* block 내 배치 정렬(세로), 줄 별로 센터 */
+            /* align-content: center; 전체 박스에서 센터  */
+        }
+        
+        .content-center {
+            /* text-align: center; */
+            /* padding-top: 35px; */
+            display: flex;
+            justify-content: center;
+            align-items: center; /* 내부 요소 가운데 정렬 */
+        }
+        
+        .container .item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item content-center">1</div>
+        <div class="item">2</div>
+        <div class="item content-center">3</div>
+        <div class="item">4</div>
+        <div class="item content-center">5</div>
+        <div class="item">6</div>
+    </div>
+</body>
+</html>
