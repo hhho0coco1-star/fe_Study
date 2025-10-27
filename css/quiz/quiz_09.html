@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main_box {
+            height: 400px;
+            background-color: lightgray;
+            /* opacity: 0.5; */
+
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: end;
+            
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+
+        .sub_box {
+            display: flex;
+        }
+
+        .red {
+            background-color: red;
+            position: relative;
+
+            animation-name: box-ani1;
+            animation-duration: 3s; /* 응답 시간 */
+            /* animation-delay: 2s; 대기 시간 */
+        }
+
+        .main_box:hover .red{
+            animation-play-state: running;
+            animation-fill-mode: forwards; /* forwards : 실행 후 상태를 적용 end */
+            animation-iteration-count: infinite; /* 반복 무제한 */
+            animation-direction: alternate; 
+        }
+
+        @keyframes box-ani1{
+            0% {
+                width: 100px;    
+            }
+            50% {
+                width: 200px;
+            }
+            100% {
+                width: 400px;
+            }
+        }
+        .blue {
+            background-color: blue;
+
+            animation-name: box-ani2;
+            animation-duration: 3s;
+        }
+
+        .main_box:hover .blue{
+            animation-play-state: running;
+            animation-fill-mode: forwards; /* forwards : 실행 후 상태를 적용 end */
+            animation-iteration-count: infinite; /* 반복 무제한 */
+            animation-direction: alternate; 
+        }
+
+        @keyframes box-ani2{
+            0% { }
+            100% {
+                background-color: purple;
+            }
+        }
+        .black {
+            background-color: black;
+            position: relative;
+
+            animation-name: box-ani3;
+            animation-duration: 3s;
+        }
+
+        .main_box:hover .black{
+            animation-play-state: running;
+            animation-fill-mode: forwards; /* forwards : 실행 후 상태를 적용 end */
+            animation-iteration-count: infinite; /* 반복 무제한 */
+            animation-direction: alternate; /* 순방향 진행 후, 역방향으로 진행 */
+        }
+
+        @keyframes box-ani3{
+            0% { 
+                left: 0px;
+            }
+            50% {
+                left: 100px;
+            }
+            100% {
+                left: 200px;
+            }
+        }
+
+        .green {
+            background-color: green;
+
+            animation-name: box-ani4;
+            animation-duration: 3s;
+        }
+
+        @keyframes box-ani4{
+            0% { 
+                border: 1px solid red;
+            }
+            50% {
+                border: 5px solid red;
+            }
+            100% {
+                border: 10px solid red;
+            }
+        }
+        .green:hover, .yellow:hover {
+            animation-play-state: running;
+            animation-fill-mode: forwards; /* forwards : 실행 후 상태를 적용 end */
+            animation-iteration-count: infinite; /* 반복 무제한 */
+            /* animation-direction: alternate; 순방향 진행 후, 역방향으로 진행 */
+        }
+
+        .yellow {
+            background-color: yellow;
+
+            animation-name: box-ani4;
+            animation-duration: 3s;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="main_box">
+        <div class="box red">1</div>
+        <div class="box blue">2</div>
+        <div class="box black">3</div>
+        <div class="sub_box">
+            <div class="box green">4</div>
+            <div class="box yellow">5</div>
+        </div>
+    </div>
+</body>
+
+</html>
