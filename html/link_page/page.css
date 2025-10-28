@@ -1,0 +1,24 @@
+.navbar ul {
+    list-style-type: none; /* ul li 점 없애기 */
+    display: flex;
+    background-color: limegreen;
+}
+
+.navbar li {
+    width: 150px;
+    height: 50px;
+    border:  1px solid red;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar li:hover {
+    background-color: lightgreen;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+}

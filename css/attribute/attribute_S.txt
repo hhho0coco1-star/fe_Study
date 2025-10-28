@@ -41,3 +41,17 @@ orientation landscape: (가로 모드)
             }
         }
 
+-------------------- 3. 태그 --------------------
+
+<a href="주소">페이지 이동</a>
+
+<link her="stylesheet" href="파일 위치">
+- 페이지 적용 시, 여러 개의 페이지일 경우 외부 스타일 시트 적용 방법 선택
+
+<form>범위 내 submit
+    <input type="text" value="기본값">
+</form>
+
+<form action="전달 주소"> action=
+    <button type="submit">버튼</button>
+</form>
