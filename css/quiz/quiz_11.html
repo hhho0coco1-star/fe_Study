@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main_box {
+            width: 800px;
+            /* border: 2px solid black; */
+            /* margin: 0 auto; */
+            /* position: absolute; */
+
+            display: grid;
+            /* place-items: center; */
+            grid-template-rows: repeat(5, 100px);
+            grid-template-columns: repeat(8,100px);
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .ly {
+            background-color: yellow;
+            border: 1px solid black;
+            grid-column: 1 / 5;
+        }
+        
+        .g {
+            background-color: gray;
+            border: 1px solid black;
+            grid-column: 5 / 9;
+        }
+
+        .p {
+            background-color: lightsteelblue;
+            border: 1px solid black;
+            grid-column: 1 / 9;
+        }
+
+        .lg {
+            background-color: lightgray;
+            border: 1px solid black;
+            grid-column: 1 / 4;
+            grid-row-start: 3;
+            grid-row-end: 5;
+        }
+
+        .ly2 {
+            background-color: yellow;
+            border: 1px solid black;
+            grid-column: 4 / 9;
+        }
+
+        .p2 {
+            background-color: pink;
+            border: 1px solid black;
+            grid-column: 4 / 9;
+        }
+
+        .ly3 {
+            background-color: yellow;
+            border: 1px solid black;
+            grid-column: 1 / 3;
+        }
+
+        .y {
+            background-color: orange;
+            border: 1px solid black;
+            grid-column: 3 / 5;
+        }
+
+        .ly4 {
+            background-color: yellow;
+            border: 1px solid black;
+            grid-column: 5 / 7;
+        }
+
+        .g2 {
+            background-color: yellowgreen;
+            border: 1px solid black;
+            grid-column: 7 / 9;
+        }
+    </style>
+</head>
+<body>
+    <div class="main_box">
+        <div class="box ly">1</div>
+        <div class="box g">2</div>
+        <div class="box p">3</div>
+        <div class="box lg">4</div>
+        <div class="box ly2">5</div>
+        <div class="box p2">6</div>
+        <div class="box ly3">7</div>
+        <div class="box y">8</div>
+        <div class="box ly4">9</div>
+        <div class="box g2">10</div>
+    </div>
+</body>
+</html>

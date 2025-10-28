@@ -1,0 +1,43 @@
+
+<Attribute>
+-------------------- 1. 가운데 정렬 --------------------
+
+margin: 0 auto; (block 요소 대상 가운데 정렬)
+text-align: text; 가운데 정렬
+align-content: center; (행을 기준으로 가운데 정렬)
+
+-------------------- 2. 글자 --------------------
+
+font-size: px / % / rm(현재부모 요소 대비) / rem(최상위 요소 대비)
+
+---------- 2025.10.28(화) ----------
+
+1. 반응형 웹(미디어 쿼리 : 사이트에 접속하는 미디어 타입과 특징, 
+해상도에 따라 다른 스타일 속성을 적용할 수 있게 하는 기술)
+
+media type:(미디어 쿼리 적용 대상)
+all
+print(인쇄장치)
+screen(컴퓨터 화면 또는 스마트 기기)
+speech(스크린 리더기 같은 보조프로그램: 웹 페이지 읽어주는 프로그램)
+
+media feature:(미디어 쿼리가 적용될 미디어 조건)
+min-width <화면 최소 너비> :
+max-width <화면 최대 너비> :
+orientation portrait: (세로 모드)
+orientation landscape: (가로 모드)
+
+ [사용 예시]
+ @media screen and (max-width: 900px) {
+            .box {
+                background-color:  lightgreen;
+                }
+            h2 {
+                color: lightpink
+                }
+            p {
+                font-weight: normal;
+                font-size: 12px;
+            }
+        }
+
